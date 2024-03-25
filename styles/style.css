@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); 
 
 * {
     box-sizing: border-box;
@@ -25,4 +25,19 @@ header .name {
 .list li {
     display: inline-block; 
     padding: 0px 20px;
+}
+section {
+    padding: 20px 10%; 
+    color: #edf0f1;
+}
+section .article {
+    border: 1px solid #edf0f1;
+    border-radius: 10px;
+    padding: 20px 2%; 
+    font-weight: 300;
+}
+section .header {
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: 500;
 }
