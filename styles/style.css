@@ -53,6 +53,9 @@ section .article .header .name {
 .hide {
     display: none;
 }
+.bold {
+    font-weight: 500;
+}
 i {
     cursor: pointer;
 }
