@@ -50,6 +50,10 @@ section .article .header .name {
     font-size: 30px;
     font-weight: 500;
 }
+section .article .info {
+    font-style: italic;
+    font-size: 14px;
+}
 .hide {
     display: none;
 }
@@ -58,4 +62,7 @@ section .article .header .name {
 }
 i {
     cursor: pointer;
+}
+hr {
+    margin: 10px 0 10px 0;
 }
