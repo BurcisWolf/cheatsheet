@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/9b5a866004.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
-    <title>Cheatsheet - All Kind of stuff here</title>
+    <title>Cheat sheet - All Kind of stuff here</title>
 </head>
 <body>
     <header>
@@ -98,7 +98,37 @@
             <div class="clanek6 hide">
                 <p class="info"><span class="bold">What is it?</span> React JS is an open-source JavaScript library for building user interfaces. Developed by Facebook (now Meta), it has become one of the most popular tools for creating interactive web applications</p>    
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat cumque laudantium vel ullam odit similique ab accusantium repellat necessitatibus!</p>
+                <h2>Creating Users</h2>
+                <p>
+                    SELECT USER_NAME(); - Who am I ? <br>
+                    CREATE USER < user name > WITHOUT LOGIN; - Creating user without login (only user in database)<br>
+                    CREATE LOGIN < login name > WITH PASSWORD = 'password' - Creating user which will be able to Log in Management studio.<br>
+                    CREATE USER < user name > FOR LOGIN < login name > - Now user can login into Database and fully use it if he has privilegis<br>
+                    EXECUTE AS USER = 'user name' - Switching users in Database <br>
+                    REVERT - Switching to the last user <br>
+                    GRANT < what commands > ON < schema or others > TO user - Granting privilegis to user so they can do stuff <br>
+                    REVOKE - Revoking privilegis
+                </p>
+                <br>
+                <h2>Transactions and Savepoints</h2>
+                <p>
+                    BEGIN TRAN - Starting a Transaction<br>
+                    COMMIT - Commiting a Transaction<br>
+                    ROLLBACK - Canceling whole Transaction<br>
+                    SAVE TRAN < name > - SAVEPOINT for ROLLBACK <br>
+                    ROLLBACK TRANSACTION < name > - Canceling to the SAVEPOINT <br>
+                    SELECT @@TRANCOUNT - How much Transaction is open<br>
+                    SELECT XACT_STATE(); - Check if transation is open (doesnt matter how much). State: 1 - Yes , 0 - No, -1 - Transaction is broken
+                </p>
+                <br>
+                <h2>XML and JSON</h2>
+                <br>
+                <h2>FileGroups</h2>
+                <br>
+                <h2>Partitions</h2>
+                <br>
+                <h2>System Tables</h2>
+                <p>SELECT * FROM sys.schemas; - Schemes in Database <br> SELECT * FROM sys.sysusers; - Users in Database</p>
             </div>
         </div>  
     </section>
