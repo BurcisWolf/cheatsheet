@@ -103,6 +103,18 @@
             <div class="clanek6 hide">
                 <p class="info"><span class="bold">What is it?</span> React JS is an open-source JavaScript library for building user interfaces. Developed by Facebook (now Meta), it has become one of the most popular tools for creating interactive web applications</p>    
                 <hr>
+                <h2>Basics</h2>
+                <p>
+                    SELECT * FROM Production.Product; - Select everything from Table Production.Product<br>
+                    SELECT OrderDate AS [Dates] FROM Production.Product; - Select Column OrderDate from Table Production.Product and give it alias Dates <br>
+                    SELECT ProductID, Name + '(' + ProductNumber + ')', ListPrice - StandardCost FROM Production.Product; - Select ProductID, Name and ProductNumber in one column (CONCATINATE), and substract StandardCost from ListPrice <br>
+                    CAST(ProductID AS varchar(4)) - We are converting/casting one Datatype into another , now we are casting INT into varchar(string) ... But we have to be sure we are able to (varchar into int does not need to work)<br>
+                    TRY_CAST(Size AS integer) - We are trying to cast. If it is possible to cast Size as int, we will get numerical outpit, if it is not able to do it, we will get NULL <br>
+                    CONVERT(varchar(4), ProductID) - Same as CAST but different syntax, mostly used for Date, we can choose different date formats with CONVERT <br>
+                    PARSE('01/01/2021' AS date) - converts the string '01/01/2021' into a date data type <br>
+                    STR(ListPrice) - Converts numerical value into string <br>
+                </p>
+                <br>
                 <h2>Creating Users</h2>
                 <p>
                     SELECT USER_NAME(); - Who am I ? <br>
