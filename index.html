@@ -113,6 +113,8 @@
                     CONVERT(varchar(4), ProductID) - Same as CAST but different syntax, mostly used for Date, we can choose different date formats with CONVERT <br>
                     PARSE('01/01/2021' AS date) - converts the string '01/01/2021' into a date data type <br>
                     STR(ListPrice) - Converts numerical value into string <br>
+                    ISNULL(MiddleName, 'None') - If our output would be null and we dont want that we can use this function to change all outputs into something we want<br>
+                    SELECT COALESCE ( expression1, expression2, [ ,...n ] ) . evaluates the given expressions in order and returns the first non-NULL value it encounters. <br>
                 </p>
                 <br>
                 <h2>Creating Users</h2>
@@ -145,7 +147,10 @@
                 <h2>Partitions</h2>
                 <br>
                 <h2>System Tables</h2>
-                <p>SELECT * FROM sys.schemas; - Schemes in Database <br> SELECT * FROM sys.sysusers; - Users in Database</p>
+                <p>
+                    SELECT * FROM sys.schemas; - Schemes in Database <br> 
+                    SELECT * FROM sys.sysusers; - Users in Database
+                </p>
             </div>
         </div>  
     </section>
